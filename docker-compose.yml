@@ -1,0 +1,15 @@
+# Runs the two pattern demos as one-off containers.
+#   docker compose run --rm checkout-saga       # idempotent API + orchestrated saga + outbox
+#   docker compose run --rm resilient-client    # retry, circuit breaker, bulkhead, timeout
+services:
+  checkout-saga:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    command: ["node", "dist/examples/checkout-saga.js"]
+
+  resilient-client:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    command: ["node", "dist/examples/resilient-client.js"]

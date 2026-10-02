@@ -1,0 +1,31 @@
+{
+  "name": "microservices-patterns",
+  "version": "1.0.0",
+  "description": "Catalogue of microservices architecture patterns with runnable TypeScript reference implementations",
+  "author": "Shiv Kumar (https://github.com/shivkumarsinghsky)",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint . && prettier --check .",
+    "format": "prettier --write .",
+    "test": "vitest run",
+    "examples": "npm run build && node dist/examples/checkout-saga.js && node dist/examples/resilient-client.js",
+    "check:docs": "node scripts/check-pattern-docs.mjs && python3 scripts/check_links.py ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "@types/node": "^22.20.5",
+    "eslint": "^9.39.5",
+    "globals": "^17.13.0",
+    "prettier": "^3.9.9",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.71.0",
+    "vitest": "^5.0.3"
+  }
+}
