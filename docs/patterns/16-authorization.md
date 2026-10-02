@@ -47,7 +47,7 @@ function authorize(principal: Principal, permission: Permission, resource: { ten
 ```
 
 Tenant-aware RBAC with PostgreSQL row-level security is implemented in
-[enterprise-saas-plateform](https://github.com/shivkumarsinghsky/enterprise-saas-plateform).
+[enterprise-saas-platform](https://github.com/shivkumarsinghsky/enterprise-saas-platform).
 
 ## Advantages
 

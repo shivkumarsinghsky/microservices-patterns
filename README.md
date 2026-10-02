@@ -211,7 +211,7 @@ docker compose run --rm resilient-client    # retry, circuit breaker, bulkhead, 
 `docker/Dockerfile` is multi-stage (TypeScript build, then only the compiled output on `node:22-alpine`, non-root).
 Runnable services with a broker and database are in
 [event-driven-platform](https://github.com/shivkumarsinghsky/event-driven-platform) and
-[enterprise-saas-plateform](https://github.com/shivkumarsinghsky/enterprise-saas-plateform).
+[enterprise-saas-platform](https://github.com/shivkumarsinghsky/enterprise-saas-platform).
 
 ## Architecture Decisions
 
@@ -261,7 +261,7 @@ Not implemented yet:
 ## Related Projects
 
 - [Event-Driven Platform](https://github.com/shivkumarsinghsky/event-driven-platform) — these messaging patterns running against RabbitMQ and PostgreSQL
-- [Enterprise SaaS Platform](https://github.com/shivkumarsinghsky/enterprise-saas-plateform) — authentication, tenant-aware RBAC, row-level security
+- [Enterprise SaaS Platform](https://github.com/shivkumarsinghsky/enterprise-saas-platform) — authentication, tenant-aware RBAC, row-level security
 - [System Design Architecture](https://github.com/shivkumarsinghsky/system-design-architecture) — designs that apply these patterns
 - [EAM Platform Architecture](https://github.com/shivkumarsinghsky/eam-platform-architecture) — the work order domain used in the event-sourcing example
 

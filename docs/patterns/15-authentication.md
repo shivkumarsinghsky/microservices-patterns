@@ -58,7 +58,7 @@ export async function authenticate(bearer: string) {
 ```
 
 A complete tenant-aware implementation is in
-[enterprise-saas-plateform](https://github.com/shivkumarsinghsky/enterprise-saas-plateform).
+[enterprise-saas-platform](https://github.com/shivkumarsinghsky/enterprise-saas-platform).
 
 ## Advantages
 
